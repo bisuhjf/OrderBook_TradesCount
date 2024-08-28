@@ -23,10 +23,10 @@ def bb_ob(symbol):
         asks_df['diff_volume'] = asks_df['diff'] * asks_df['volume']
         bids_sum = sum(bids_df['diff_volume'])
         asks_sum = sum(asks_df['diff_volume'])
-        return bids_sum, asks_sum
     else:
         print("Error Code: {}".format(response.status_code))
-        return None
+        bids_sum, asks_sum = 0, 0
+    return bids_sum, asks_sum
 
 
 
