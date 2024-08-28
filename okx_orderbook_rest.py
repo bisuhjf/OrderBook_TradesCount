@@ -30,6 +30,6 @@ def ok_ob(symbol):
         asks_sum = sum(asks_df['diff_volume'])
     else:
         print('Error Code: {}'.format(response.status_code))
-        bids_sum, asks_sum = 0, 0
-    return bids_sum, asks_sum
+        bids_sum, asks_sum, mid = 0, 0, 0
+    return bids_sum, asks_sum, mid
 
