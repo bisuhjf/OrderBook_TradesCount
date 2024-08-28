@@ -28,7 +28,7 @@ def cb_ob(symbol):
         bids_sum = sum(bids_df['diff_volume'])
         asks_sum = sum(asks_df['diff_volume'])
     else:
-        print('Error: {}'.format(res.status))
+        print('Coinbase Error Code: {}'.format(res.status))
         bids_sum, asks_sum, mid = 0, 0, 0
     return bids_sum, asks_sum, mid
 
