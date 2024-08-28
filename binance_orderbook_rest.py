@@ -2,13 +2,16 @@ import pandas as pd
 import requests
 
 
-def bn_ob():
-    bn_host = 'https://api.binance.com'
-    bn_prefix = '/api/v3/depth'
-    headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
-    bn_symbol = 'BTCUSDT'
-    limit = 10
-    bn_url = '{}{}?symbol={}&limit={}'.format(bn_host, bn_prefix, bn_symbol, limit)
+bn_host = 'https://api.binance.com'
+bn_prefix = '/api/v3/depth'
+headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
+symbol_usdt = 'BTCUSDT'
+symbol_fdusd = 'BTCFDUSD'
+limit = 10
+
+
+def bn_ob(symbol):
+    bn_url = '{}{}?symbol={}&limit={}'.format(bn_host, bn_prefix, symbol, limit)
     response = requests.request('GET', bn_url, headers=headers)
     if response.status_code == 200:
         depth_info = response.json()
