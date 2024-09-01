@@ -1,4 +1,4 @@
-Here I attempt to build a blockchain which can store the order book date and the recent trades of Bitcoin of the main CEXes.
+Here I attempt to build a blockchain which can store the order book date and the recent trades of Bitcoin of the main CEXes.\n
 They are the two aspects of micro-market data who quant traders need.
 Such as Binance, OKX, Coinbase, Kraken, Bybit, Gateio and so on.
 And contains 7 trading pairs, which are 'BTCUSDT' and 'BTCFDUSD' of Binance, 'BTC-USD' of Coinbase, 'BTC-USDT' of OKX, 'BTCUSDT' of Bybit, 'BTC_USDT' of Gateio, and 'BTC/USD' of Kraken.
