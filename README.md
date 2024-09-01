@@ -1,3 +1,5 @@
+2024.8.30
+
 Here I attempt to build a blockchain which can store the order book date and the recent trades of Bitcoin of the main CEXes.
 
 They are the two aspects of micro-market data who quant traders need.
@@ -16,4 +18,8 @@ So this blockchain must adding one block every 1 second.
 
 What proof mechanism does this blockchain require, POS or POW? Or other mechanism else?
 
+
+2024.9.1
+
+The data upload should be json format.
 
