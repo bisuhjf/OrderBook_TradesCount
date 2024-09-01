@@ -6,7 +6,7 @@ kraken_symbol = 'BTC/USD'
 limit = 10
 
 
-def get_order_book(symbol):
+def kk_ob(symbol):
     url = "https://api.kraken.com/0/public/Depth?pair={}&count={}".format(symbol, limit)
     params = {'pair': 'XBTUSD', 'count': 10}
     response = requests.get(url, params=params)
