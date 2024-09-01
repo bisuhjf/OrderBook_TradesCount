@@ -9,7 +9,7 @@ headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
 limit = 10
 
 
-def get_order_book(symbol):
+def gt_ob(symbol):
     url = '/spot/order_book'
     query_param = 'currency_pair={}&limit={}'.format(symbol, limit)
     response = requests.request('GET', host + prefix + url + "?" + query_param, headers=headers)
